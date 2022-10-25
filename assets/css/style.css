@@ -1,0 +1,41 @@
+.app {
+    background: whitesmoke;
+    display: grid;  
+    font-family: Arial, Helvetica, sans-serif;
+    grid-template-areas: 
+        "header"
+        "contenido"
+        "footer";
+    grid-template-columns: auto;
+    grid-template-rows: 50px auto auto; 
+}
+
+.header{
+    align-items: center;
+    display: flex;
+    grid-area: header;
+    padding: 0 2rem;  
+    font-size: 1.2rem;  
+}
+.menu__link{
+    color: black;
+    padding: 0.5rem 2rem ;
+}
+.menu__link:hover, .menu__link:active{
+    border-bottom: 2px solid #0073e6;
+}
+
+.contenido {
+    grid-area: contenido;
+    padding: 0 2rem;
+}
+
+.footer{ 
+    color: black;
+    grid-area: footer;
+    text-align: center;
+    font-size: 1.5rem;
+}
+.footer strong{
+    color: blue;
+}
